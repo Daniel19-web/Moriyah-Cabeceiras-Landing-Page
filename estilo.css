@@ -1,0 +1,506 @@
+/*Usando o "*" podemos definir configurações globais.*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+body {
+    font-family: sans-serif;
+    /* Define a largura máxima do conteúdo da página */
+    margin: 0cm;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 110px; /* Adiciona espaço para o cabeçalho fixo */
+}
+header {
+    position: fixed; /* Fixa o cabeçalho no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px; /* Altura do cabeçalho (baseado no #title) */
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#title {
+    
+    width: 100vw;
+    padding-left: 40px;
+    background-image: linear-gradient(to bottom, #402a16, #7c674c);
+    height: 110px;
+    /* background-color e height movidos para o seletor 'header' para centralizar o estilo */
+}    
+
+#titulomoriyah {
+    font-size: 450%;
+    flex-direction: column;
+    line-height:0px;
+    margin-top: 30px;
+    
+}
+
+#secaobtnheader{
+    padding-right: 30px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom, #402a16, #7c674c);  
+    
+}
+
+#wpbtn {
+    
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 300px;
+    border-radius: 50px;
+    border: #5e3f22;
+    background-color: #a7a7a7;
+    
+    
+      
+    
+}
+
+a {
+    color:antiquewhite; 
+}
+
+/*Esta é uma forma de colocar uma animação nos links para em alguns segundos mudarem de cor.*/
+a:hover {
+    color:black ;
+    transition: 0.3s all;
+}
+
+#main1-0 {
+    /* Substitua 'imagens/sua-imagem.jpg' pelo nome real do seu arquivo */
+    background-image:url('imagens/fundo-header-full.png');
+    background-size: 100vw;       /* Faz a imagem cobrir toda a área visível */
+    background-color: #92795a;
+    
+    
+    /*-webkit-mask-image: linear-gradient(to bottom,  black 70%,  #92795a 100%);
+    mask-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0.0)), black 70%,  #92795a 100%;*/
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    background-repeat: no-repeat; /* Impede que a imagem se repita (mosaico) */
+    background-attachment: scroll; /* Mantém o fundo fixo enquanto você rola a página */
+    /* margin-top: -20px; Removido pois o padding no body já cria o espaço necessário */
+}
+
+#secaoimgmain1-0 {
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    
+    
+}
+
+.img-main1-0 {
+    width: 360px;
+    height: 280px;
+    margin-top: 150px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+
+main {
+    background-color: #92795a;
+    display: flex;
+    flex-direction: column; /* Permite que os itens "quebrem" para a linha de baixo */
+    min-height: 60vh;   /* Espaçamento entre as colunas */
+    padding: 20px;
+    padding-top: 0px;
+    align-items: center;
+    
+}
+
+#maindiv {
+    background-color:#a7a7a7;
+    width: 1000px;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+#maindiv2 {
+    background-color:#a7a7a7;
+    width: 1000px;
+    height: 60vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 15px;
+    border-radius: 25px;
+    
+}
+
+
+aside {
+    order: 2;
+    flex: 0 1 250px; /* Não cresce, encolhe e tem base de 250px */
+    margin: 27px;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 400px ;
+}
+
+p {
+    width: 400px;
+    
+}
+
+article {
+    flex: 1 1 300px; /* Cresce, encolhe e tem base de 300px */
+    margin-top: 0px;
+    margin-left: 150px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+}
+
+#sofapng {
+    width: 350px; /* Aumenta o sofá para dar destaque */
+    margin-top: -100px; /* Puxa para cima, saindo da caixa */
+    filter: drop-shadow(15px 15px 20px rgba(41, 41, 41, 0.5)); /* Sombra realista no contorno do sofá */
+}
+
+/*Trecho de animações do site*/
+
+.entrada {
+    opacity: 0;
+    filter: blur(15px); 
+    transform: translateY(100px);
+    transition: all 0s;
+} 
+
+.show {
+    opacity: 1; 
+    filter: blur(0); 
+    transform:translateY(0); 
+    transition: all 1s;
+}
+
+
+
+#foto {
+    
+    width: 33vw;
+    height: 25vw;
+    border-radius: 15px;
+    box-shadow: 25px 25px 25px #6a5842;
+    
+    
+    
+    
+}
+
+#img-h1 {
+    width: 100px;
+    height: 90px;
+}
+
+
+
+p {
+    
+    line-height: 25px;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+
+footer {
+    background-image: linear-gradient(to top, #26190D, #5e3f22);
+    text-align: center;
+    font-style: italic;
+}
+
+#footerdiv {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+}
+/*A partir deste ponto, antes das media query, vou estilizar a segunda parte do site.*/
+
+/* #main2-0{
+    
+    
+}
+
+.img-main2-0 {
+    
+
+    
+}
+
+
+ */
+
+
+
+/* Ajuste para telas pequenas */
+
+@media screen and (max-width: 1500px){
+
+    header {
+        height: 8vw;
+        
+    }
+
+    .img-main1-0 {
+        width: 300px;
+        height: 250px;
+        
+    }
+}
+@media screen and (max-width: 1350px) {
+
+    header {
+        height: 9vw;
+    }
+
+    .img-main1-0 {
+        width: 290px;
+        height: 240px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1220px){
+    
+    .img-main1-0 {
+        width: 270px;
+        height: 220px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1190px){
+    
+    header {
+        height: 10vw;
+    }
+    
+    #main1-0 {
+        height: 60vw;
+        margin-top: 85px;
+    }
+    
+}
+
+@media screen and (max-width: 1135px){
+
+    #main1-0 {
+        display: column;
+        justify-content: center;
+        margin-top:5px;
+        /* margin-top:5px; Removido devido ao cabeçalho fixo */
+        height: 85vw;
+    }
+
+    #secaoimgmain1-0 {
+        display: grid;
+        grid-template-columns: repeat(2, auto); /* Cria 2 colunas de largura automática */
+        justify-content: center; /* Centraliza a grade no contêiner */
+        gap: 10px; /* Define o espaço entre as imagens */
+        
+    }
+
+    .img-main1-0 {
+        width: 360px;
+        height: 280px;
+        
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    header {
+        min-height: 106vh;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row ;
+    }
+
+    .aside {
+        
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .article {
+        
+        
+        margin-top: 40px;
+        margin-left: 25px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+
+    }
+    
+    .foto {
+        width: 350px;
+        min-width: 300px;
+        max-width: none;
+        height: 283px;
+        
+    }
+}
+
+@media screen and (max-width: 814px) {
+
+    header {
+        min-height: 108vh;
+    }
+
+    .foto {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    
+    header {
+        min-height: 80vw;
+    }
+    .foto {
+        width: 280px;
+        min-width: 250px;
+        max-width: none;
+        height: 232px;
+    }
+
+    
+    .aside {
+        
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    
+    #wpbtn {
+        font-size: 20px;
+        width: 216px;
+        margin-bottom: 30px;
+    }
+
+    .article {
+        
+        
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 00px;
+        margin-bottom: 50px;
+    
+    }
+}   
+
+@media screen and (max-width: 606px) {
+
+    header {
+        min-height: 90vw;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        order: 2;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+    .article {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
+    .foto {
+        width: 388px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        background-image:url('imagens/fundo-header-500px.png');
+        background-size: 100vw;
+        background-color: #92795a;
+        min-height: 122vw;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    header {
+        background-image:url('imagens/fundo-header-500px.png');
+        background-size: 100vw;
+        background-color: #92795a;
+        min-height: 200vw;
+        min-width: 290px;
+    }
+
+    h1 {
+        
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    
+
+    #titulomoriyah {
+        padding: 5px;
+        font-size: 65px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .aside {
+        order: 2;
+        margin-top: 0px;
+    }
+    
+    .article {
+        margin-bottom: 0px;
+    }
+    
+    .foto {
+        width: 265px;
+        height: 220px;
+    }
+}
