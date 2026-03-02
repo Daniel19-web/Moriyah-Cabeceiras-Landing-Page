@@ -133,7 +133,7 @@ main {
     border-radius: 25px;
 }
 
-#maindiv2 {
+#mainmidle{
     background-color:#a7a7a7;
     width: 1000px;
     height: 60vw;
@@ -144,6 +144,13 @@ main {
     border-radius: 25px;
     align-items: center;
     
+    
+}
+
+#articledamainmidlle {
+    margin-left: 50px;
+    margin-right: 0px;
+
 }
 
 #wpbtn-btn-maindiv2 {
@@ -180,7 +187,7 @@ article {
     margin-right: 50px;
 }
 
-#sofapng {
+.sofapng {
     width: 350px; /* Aumenta o sofá para dar destaque */
     margin-top: -100px; /* Puxa para cima, saindo da caixa */
     filter: drop-shadow(15px 15px 20px rgba(41, 41, 41, 0.5)); /* Sombra realista no contorno do sofá */
@@ -204,17 +211,7 @@ article {
 
 
 
-#foto {
-    
-    width: 33vw;
-    height: 25vw;
-    border-radius: 15px;
-    box-shadow: 25px 25px 25px #6a5842;
-    
-    
-    
-    
-}
+
 
 #img-h1 {
     width: 100px;
